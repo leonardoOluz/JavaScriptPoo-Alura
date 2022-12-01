@@ -1,20 +1,23 @@
 import chalk from "chalk"
 
-function User(nome, email) {
+
+// em funções nunca se começa com letra maiuscula, mais se tratando de uma função de criação de objeto, usamos a primeira letra em maiusculo para definir que é uma classe em java script.
+
+function User(nome, email) { 
     this.nome = nome
     this.email =email
     this.exibirInfos = function (){
         return `${this.nome}, ${this.email}`
     }
 }
-
+ 
 // const novoUser = new User('Leonardo', 'l@l.com') // usando o New função construtora
 // console.log(chalk.green(novoUser.exibirInfos()))
 
-// function Admin(role){
-//     User.call(this, 'juliana', 'j@j.com')
-//     this.role = role || 'estudante'
-// }
+function Admin(role){
+    User.call(this, 'juliana', 'j@j.com')
+    this.role = role || 'estudante'
+}
 
 // Admin.prototype = Object.create(User.prototype)
 // const novoUser = new Admin('admin')
