@@ -2,7 +2,7 @@
   "name": "javascript-poo",
   "version": "1.0.0",
   "description": "Poo JavaScript",
-  "main": "index.js",
+  "main": "User.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,9 +11,7 @@
     "type": "git",
     "url": "git+ssh://git@github.com/leonardoluz1020/JavaScriptPoo-Alura.git"
   },
-  "keywords": [
-    ""
-  ],
+  "keywords": [],
   "author": "LeoLuz",
   "license": "ISC",
   "bugs": {
