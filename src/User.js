@@ -18,15 +18,21 @@ export default class User {
         this.#role = role || 'estudante'
         this.#ativo = ativo
     }
-
     //                ***  Metodos Especiais  ***
 
     // O metodos getters serve para apenas leituras função get nunca recebe argumento só returna variaveis que estão privadas
-
     get nome() {
         // Podemos colocar logica dentro do get
         if (this.#ativo) {
             return `${this.#nome} ${this.#sobrenome}`
+        } else {
+            return `${this.#role} está desativado`
+        }
+    }
+    get sobrenome() {
+        // Podemos colocar logica dentro do get
+        if (this.#ativo) {
+            return `${this.#sobrenome}`
         } else {
             return `${this.#role} está desativado`
         }
@@ -51,7 +57,6 @@ export default class User {
             return `Usuario desativado`
         }
     }
-
     // Metodos setters serve para modificar um atributo privado
     set nome(novoNome) {
         // Podemos colocar logica dentro do set
@@ -79,10 +84,8 @@ export default class User {
         // Podemos colocar logica dentro do set
         this.#ativo = novoAtivo
     }
-
     // Não usamos a palavra function ao declarar um metodo na classes e só passamos o nome e criamos o metodo
-
-    #exibirInfos() { // metodo 
+    exibirInfos() { // metodo 
         return `Nome do aluno: ${this.nome}.
                 Sobrenome: ${this.sobrenome} 
                 Email: ${this.email}. 
