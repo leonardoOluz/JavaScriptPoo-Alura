@@ -14,6 +14,10 @@ export default class User {
     }
     // Não usamos a palavra function ao declarar um metodo na classes e só passamos o nome e criamos o metodo
     exibirInfos() {
-        return `${this.#nome}, ${this.#email}`
+        return `Nome do aluno: ${this.#nome}. 
+        Email: ${this.#email}. 
+        Data de nascimento: ${this.#nascimento}. 
+        Função:${this.#role}.
+        Ativo:${this.#ativo}.`
     }
 }
