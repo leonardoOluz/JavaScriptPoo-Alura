@@ -65,10 +65,10 @@ class User {
  get nome(){
    return this._nome
  }
-}COPIAR CÓDIGO
+}/* COPIAR CÓDIGO
 Acima, criamos uma classe com apenas um construtor para receber um valor para a propriedade nome e um getter para nome.
 
-Vamos instanciar a classe e tentar atualizar nome:
+Vamos instanciar a classe e tentar atualizar nome: */
 
 // criar o usuário
 let novoUser = new User('Rodrigo');
@@ -76,7 +76,7 @@ console.log(novoUser.nome) //usando o getter
 
 novoUser.nome = 'Mariana'
 console.log(novoUser.nome) //não é modificado, continua 'Rodrigo'COPIAR CÓDIGO
-O setter não foi implementado, então a propriedade não é modificada.
+/* O setter não foi implementado, então a propriedade não é modificada. */
 
 /* Usando métodos
 É possível emular os getters e setters com funções. As funções são mais flexíveis do que get/set (podem aceitar argumentos diferentes, por exemplo). */
